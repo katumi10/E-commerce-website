@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="top-nav-bar">
+        <div class="search-box">
+            <i class="fa fa-bars" id="menubtn" onclick="openMenu()">x</i>
+            <i class="fa fa-times" id="closebtn" onclick="closeMenu()">p</i>
+             <img src="Images/boot.jpg" alt="logo" class="logo"> 
+             <input type="text " class="form-control">
+             <span class="input-group-text">
+                <i class="fa fa-search"></i>
+             </span>
+        </div>
+
+        <div class="menu-bar">
+            <ul>
+                <li><a href="#"><i class="fa fa-shopping-basket"></i>Cart</a></li>
+                <li><a href="#">Sign Up</a></li>
+                <li><a href="#">Log In</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <section class="header">
+        <div class="side-menu" id="side-menu">
+            <ul>
+                <li>On Sale <i class="fa fa-angle-right"></i>
+                <ul>
+                    <li>Sub Menu-1</li>
+                    <li>Sub Menu-1</li>
+                    <li>Sub Menu-1</li>
+                    <li>Sub Menu-1</li>
+                </ul>
+                
+                </li>
+                <li>Mobiles <i class="fa fa-angle-right"></i>
+                    <ul>
+                        <li>Sub Menu-2</li>
+                        <li>Sub Menu-2</li>
+                        <li>Sub Menu-2</li>
+                        <li>Sub Menu-2</li>
+                    </ul>
+                </li>
+                <li>Computers <i class="fa fa-angle-right"></i>
+                    <ul>
+                        <li>Sub Menu-3</li>
+                        <li>Sub Menu-3</li>
+                        <li>Sub Menu-3</li>
+                        <li>Sub Menu-3</li>
+                    </ul>
+                </li>
+                <li>Books <i class="fa fa-angle-right"></i>
+                <li>Fitness <i class="fa fa-angle-right"></i>
+                 <li>Baby Care <i class="fa fa-angle-right"></i>
+                 <li>Magazines <i class="fa fa-angle-right"></i> 
+                <li>Auto Accessories<i class="fa fa-angle-right"></i>
+                 <li>Movies and Music<i class="fa fa-angle-right"></i>
+                 <li>Video and Games<i class="fa fa-angle-right"></i> 
+                <li>Home and Kitchen<i class="fa fa-angle-right"></i> 
+                <li>Furniture <i class="fa fa-angle-right"></i> 
+                <li>Grocery<i class="fa fa-angle-right"></i>
+            </ul>
+        </div>
+        <div class="slider">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="Images/pc.jpg" class="d-block w-100">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="Images/spices.jpg" class="d-block w-100" >
+                  </div>
+                  <div class="carousel-item">
+                    <img src="Images/clothes.jpg" class="d-block w-100">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              
+        </div>
+    </section>
+</body>
+<script>
+
+        function openMenu(){
+            document.getElementById("side-menu").style.display="block";
+            document.getElementById("menubtn").style.display="none";
+            document.getElementById("closebtn").style.display="block";
+        }
+
+        function closeMenu(){
+            document.getElementById("side-menu").style.display="none";
+            document.getElementById("menubtn").style.display="block";
+            document.getElementById("closebtn").style.display="none";
+        }
+
+</script>
+<script src="js/bootstrap.bundle.js"></script>
+</html>
